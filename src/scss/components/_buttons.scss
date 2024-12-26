@@ -1,0 +1,17 @@
+@layer components {
+  .app-c-btn {
+    @apply rounded px-4 py-2 font-bold text-white transition-colors duration-200 ease-in;
+
+    &:not(:disabled) {
+      @apply cursor-pointer;
+    }
+
+    &.app-c-btn--primary {
+      @apply bg-blue-500 hover:bg-blue-700;
+    }
+
+    &.app-c-btn--secondary {
+      @apply bg-green-500 hover:bg-green-700;
+    }
+  }
+}
